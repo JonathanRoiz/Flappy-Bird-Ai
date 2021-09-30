@@ -66,8 +66,8 @@ let deadCharacters = [];
 
 function createPipe() {
   let gap = Math.random();
-  let pipe = new Pipe(canvas.width,0,50,gap * (canvas.height/1.5));
-  let pipe2 = new Pipe(canvas.width,canvas.height-((1-gap)*(canvas.height/2)),50,(1-gap)*(canvas.height/1.5));
+  let pipe = new Pipe(canvas.width,0,50,gap * (canvas.height));
+  let pipe2 = new Pipe(canvas.width,canvas.height-((1-gap)*(canvas.height/2)),50,(1-gap)*(canvas.height));
   pipes.push([pipe,pipe2]);
 }
 
@@ -75,7 +75,7 @@ function start() {
   generations += 1;
   createPipe();
   for (i = 0; i < 500; i++) {
-    let character = new Character(canvas.width/6,canvas.height-(canvas.width/15),canvas.width/15,canvas.width/15,0,0,"bot"+i); // size was 50
+    let character = new Character(canvas.width/6,canvas.height-(canvas.width/15),canvas.width/20,canvas.width/20,0,0,"bot"+i); // size was 50
     characters.push(character);
   }
 }
