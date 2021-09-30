@@ -66,8 +66,8 @@ let deadCharacters = [];
 
 function createPipe() {
   let gap = Math.random();
-  let pipe = new Pipe(canvas.width,0,50,gap * (canvas.height * 1.5));
-  let pipe2 = new Pipe(canvas.width,canvas.height-((1-gap)*(canvas.height/2)),50,(1-gap)*(canvas.height * 1.5));
+  let pipe = new Pipe(canvas.width,0,50,gap * (canvas.height / 1.3));
+  let pipe2 = new Pipe(canvas.width,canvas.height-((1-gap)*(canvas.height/2)),50,(1-gap)*(canvas.height / 1.3));
   pipes.push([pipe,pipe2]);
 }
 
