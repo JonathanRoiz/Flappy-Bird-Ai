@@ -1,3 +1,3 @@
 # Flappy-Bird-Ai
 
-Acts wierd on larger devices
+Acts weird on larger devices
