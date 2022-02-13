@@ -72,7 +72,7 @@ function createPipe() {
 function start() {
   generations += 1;
   createPipe();
-  for (i = 0; i < 500; i++) {
+  for (i = 0; i < 300; i++) {
     let character = new Character(canvas.width/6,canvas.height-(canvas.width/15),canvas.width/30,canvas.width/30,0,0,"bot"+i); // size was 50
     characters.push(character);
   }
@@ -107,7 +107,7 @@ setInterval(function() {
   ctx.fillStyle = "black";
   ctx.fillText("Generation: " + generations,canvas.width/2-125,50);
   if (characters.length == 0) {
-    for (i = 0; i < 500; i++) {
+    for (i = 0; i < 300; i++) {
     if (deadCharacters[i].score > bestScore) {
       bestNN = deadCharacters[i].net;
       bestScore = deadCharacters[i].score;
