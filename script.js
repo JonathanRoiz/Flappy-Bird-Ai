@@ -73,7 +73,7 @@ function start() {
   generations += 1;
   createPipe();
   for (i = 0; i < 500; i++) {
-    let character = new Character(canvas.width/6,canvas.height-(canvas.width/15),canvas.width/25,canvas.width/25,0,0,"bot"+i); // size was 50
+    let character = new Character(canvas.width/6,canvas.height-(canvas.width/15),canvas.width/30,canvas.width/30,0,0,"bot"+i); // size was 50
     characters.push(character);
   }
 }
@@ -138,7 +138,7 @@ setInterval(function() {
       if (characters[i].y <= 1) {
         char.velocity = 0;
         char.y += 1;
-      } else if (characters[i].y >= canvas.height-(canvas.width/25)) {
+      } else if (characters[i].y >= canvas.height-(canvas.width/30)) {
         char.velocity = 0;
         char.y -= 1;
       } else {
